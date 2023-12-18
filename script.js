@@ -69,7 +69,6 @@ function setCanvasSize() {
     }
     c.height = heightInput;
     h = c.height;
-    console.log(h);
 
     createBorder();
 

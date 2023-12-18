@@ -21,7 +21,8 @@ body, input {
     text-align: center;
 }
 input {
-    color: #5879a7;
+    /* color: #5879a7; */
+    color: #9575CD;
     background-color: #393939;
     outline: none;
     border: none;
@@ -34,7 +35,7 @@ input {
     border-radius: 5px;
 }
 input:focus {
-    color: white;
+    color: #D1C4E9;
 }
 .px {
     z-index: -1;
@@ -51,4 +52,5 @@ input:focus {
 
 canvas {
     margin-top: -30px;
+    border-radius: 5px;
 }
