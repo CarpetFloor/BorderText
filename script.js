@@ -1,7 +1,7 @@
 let c = document.querySelector("canvas");
 let r = c.getContext("2d");
-let h, w;
-const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+let w, h;
+const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function resizeInput() {
     let elem = document.getElementById("string");
@@ -29,9 +29,11 @@ function resizeInput() {
     }
 
     document.body.removeChild(text);
+
+    setCanvasSize();
 }
 
-function getSize() {
+function setCanvasSize() {
     let widthInput = document.getElementById("width").value;
     let heightInput = document.getElementById("height").value;
     let onlyNums = true;
@@ -67,6 +69,17 @@ function getSize() {
     }
     c.height = heightInput;
     h = c.height;
+    console.log(h);
+
+    createBorder();
+
+    r.clearRect(0, 0, w, h);
+    r.fillStyle = "#9575CD";
+    r.fillRect(0, 0, w, h);
 }
 
-getSize();
+function createBorder() {
+    
+}
+
+setCanvasSize();
