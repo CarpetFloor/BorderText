@@ -7,15 +7,16 @@
     <title>Border Text</title>
 </head>
 <body>
+    <input oninput="resizeInput()" type="text" id="string">
     <div id="container">
         <div>
             <p>Width</p>
-            <input type="text" id="width" value="500">
+            <input oninput="getSize()" type"text" id="width" value="500">
             <p class="px">px</p>
         </div>
         <div>
             <p>Height</p>
-            <input type="text" id="height" value="700">
+            <input oninput="getSize()" type"text" id="height" value="700">
             <p class="px">px</p>
         </div>
     </div>

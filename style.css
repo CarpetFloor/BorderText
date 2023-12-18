@@ -43,3 +43,8 @@ input:focus {
     padding-left: 65px;
     padding-top: 40px;
 }
+#string {
+    width: 150px;
+    text-align: left;
+    padding-left: 8px;
+}
