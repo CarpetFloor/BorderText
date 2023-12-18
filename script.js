@@ -70,15 +70,17 @@ function setCanvasSize() {
     c.height = heightInput;
     h = c.height;
 
-    createBorder();
-
     r.clearRect(0, 0, w, h);
     r.fillStyle = "#9575CD";
     r.fillRect(0, 0, w, h);
+
+    createBorder();
 }
 
 function createBorder() {
-    
+    let totalSize = w + w + h + h;
+
+    let elem = document.getElementById("string");
 }
 
 setCanvasSize();
