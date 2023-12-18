@@ -51,6 +51,7 @@ input:focus {
 }
 
 canvas {
-    margin-top: -30px;
+    /* margin-top: -30px; */
+    margin-top: 15px;
     border-radius: 5px;
 }
